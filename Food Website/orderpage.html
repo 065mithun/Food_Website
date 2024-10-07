@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="orderpage.css">
+</head>
+<body>
+  <div class="bg_image">
+    
+  </div>
+  <div class="container">
+    <h2 class="my-4">Order Payment</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Order Summary</h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between">
+            <div id="head"></div>
+            <div id="amt"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h4>Payment Details</h4>
+        <form id="paymentForm">
+          <div class="form-group">
+            <label for="cardName">Name on Card</label>
+            <input type="text" class="form-control" id="cardName" required>
+          </div>
+          <div class="form-group">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" class="form-control" id="cardNumber" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="expirationDate">Expiration Date</label>
+              <input type="text" class="form-control" id="expirationDate" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="cvv">CVV</label>
+              <input type="text" class="form-control" id="cvv" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit Payment</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="orderpage.js"></script>
+  
+</body>
+</html>
